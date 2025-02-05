@@ -1,0 +1,11 @@
+a3\Commands\WrapLinesTextCommand.class
+a3\Main.class
+a3\TextCommand.class
+a3\Commands\WrapSelectionTextCommand.class
+a3\Commands\ReplaceTextCommand.class
+a3\Commands\WrapTextCommand.class
+a3\Commands\CapitalizeWordsTextCommand.class
+a3\Commands\ReplaceFirstTextCommand.class
+a3\Commands\CapitalizeTextCommand.class
+a3\Script.class
+a3\Commands\CapitalizeSelectionTextCommand.class

@@ -20,6 +20,11 @@ public class WrapTextCommand implements a3.TextCommand {
 
     @Override
     public String execute(String text) {
+
+        if ((text == null) || text.isEmpty()) {
+            throw new IllegalArgumentException("Invalid string");
+        }
+        
         return opening + text + end;
 
     }

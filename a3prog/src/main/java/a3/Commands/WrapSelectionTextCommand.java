@@ -11,6 +11,11 @@ public class WrapSelectionTextCommand extends a3.Commands.WrapTextCommand {
 
     @Override
     public String execute(String text) {
+
+        if ((text == null) || text.isEmpty()) {
+            throw new IllegalArgumentException("Invalid string");
+        }
+        
         String wrappedSelection = new WrapTextCommand(opening, end).execute(selection);
 
         return new ReplaceTextCommand(selection, wrappedSelection).execute(text);

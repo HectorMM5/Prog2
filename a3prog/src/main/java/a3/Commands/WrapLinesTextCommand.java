@@ -8,6 +8,10 @@ public class WrapLinesTextCommand extends a3.Commands.WrapTextCommand {
 
     @Override
     public String execute(String text) {
+        if ((text == null) || text.isEmpty()) {
+            throw new IllegalArgumentException("Invalid string");
+        }
+
         String[] lines = text.split("\n");
 
         String finalText = "";

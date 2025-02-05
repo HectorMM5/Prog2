@@ -8,6 +8,10 @@ public class CapitalizeWordsTextCommand extends CapitalizeTextCommand {
 
     @Override
     public String execute(String text) {
+        if ((text == null) || text.isEmpty()) {
+            throw new IllegalArgumentException("Invalid string");
+        }
+
         String[] words = text.split(" ");
 
         String fullText = "";

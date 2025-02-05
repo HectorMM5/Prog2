@@ -20,6 +20,10 @@ public class ReplaceTextCommand implements a3.TextCommand {
 
     @Override
     public String execute(String text) {
+        if ((text == null) || text.isEmpty()) {
+            throw new IllegalArgumentException("Invalid string");
+        }
+
         return text.replace(target, replacement);
 
     }
